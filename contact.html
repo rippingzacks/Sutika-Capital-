@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Sutika Capital</title>
+<meta name="description" content="Get in touch with Sutika Capital, or reach any of our operating businesses directly.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="7" width="24" height="2.2" fill="#D3AE5C"/>
+        <rect x="4" y="14.9" width="16.5" height="2.2" fill="#EDE7D8"/>
+        <rect x="4" y="22.8" width="9.5" height="2.2" fill="#5C7C77"/>
+      </svg>
+      <span class="name">SUTIKA <b>CAPITAL</b></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h1>Reach Sutika Capital.</h1>
+    <p class="lede">For anything specific to one of our businesses, it's fastest to go straight to that team. Otherwise, send us a note below.</p>
+  </div>
+</header>
+
+<section class="contact-grid">
+  <div class="wrap contact-grid">
+
+    <div>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden" style="display:none">
+          <label>Don't fill this out: <input name="bot-field"></label>
+        </p>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="topic">This is about</label>
+          <select id="topic" name="topic">
+            <option>General inquiry</option>
+            <option>Ripping Zacks</option>
+            <option>Nimble Insurance</option>
+            <option>Agile Construction</option>
+            <option>MDS RE</option>
+            <option>Lainey</option>
+            <option>Partnership / investment</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+    </div>
+
+    <div class="contact-card">
+      <h3>Direct Lines</h3>
+      <div class="entity">
+        <span>Nimble Insurance</span>
+        <a href="https://www.nimbleins.com" target="_blank" rel="noopener">nimbleins.com</a>
+      </div>
+      <div class="entity">
+        <span>Ripping Zacks</span>
+        <a href="https://www.rippingzacks.com" target="_blank" rel="noopener">rippingzacks.com</a>
+      </div>
+      <div class="entity">
+        <span>Agile Construction</span>
+        <a href="https://www.agilectr.com" target="_blank" rel="noopener">agilectr.com</a>
+      </div>
+      <div class="entity">
+        <span>MDS RE</span>
+        <a href="mds-re.html">View holdings</a>
+      </div>
+      <div class="entity">
+        <span>Lainey</span>
+        <a href="https://www.laineyre.com" target="_blank" rel="noopener">laineyre.com</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">Sutika Capital</div>
+      <div class="footer-links">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-fine">© <span id="year"></span> Sutika Capital. A family holding company.</div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
