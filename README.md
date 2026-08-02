@@ -1,1 +1,0 @@
-# Sutika-Capital-
